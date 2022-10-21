@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="591.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+
+
+      <Button fx:id="btnOpenimgfile" mnemonicParsing="false" onAction="#handleimg" text="Open/Change Image file">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <ImageView fx:id="imgviewID" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+      <Text text="Write image information below to change output filename and press submit buttom" />
+      <Text text="(If the textarea is empty, the output filename would not be changed)" />
+
+      <TextField fx:id="mytextfield" prefHeight="26.0" prefWidth="249.0" />
+      <Button fx:id="Add_info" mnemonicParsing="false" onAction="#addinfo" prefHeight="26.0" prefWidth="98.0" text="Submit" />
+      <Button fx:id="imagepath" mnemonicParsing="false" onAction="#handle_image_path" prefHeight="26.0" prefWidth="184.0" text="Check image path" />
+      <Button fx:id="ConvertID_png" mnemonicParsing="false" onAction="#handleConvert_png" prefHeight="26.0" prefWidth="185.0" text="Convert to PNG and download" />
+      <Button fx:id="ConvertID_jpg" mnemonicParsing="false" onAction="#handleConvert_jpg" prefHeight="26.0" prefWidth="186.0" text="Convert to JPG and download" />
+      <Button fx:id="ConvertID_gif" mnemonicParsing="false" onAction="#handleConvert_gif" prefHeight="26.0" prefWidth="184.0" text="Convert to GIF and download" />
+      <Button fx:id="ConvertID_BMP" mnemonicParsing="false" onAction="#handleConvert_bmp" prefHeight="26.0" prefWidth="184.0" text="Convert to BMP and download" />
+   </children>
+</VBox>
